@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>杀生丸的空间</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', sans-serif; }
+    body { background-color: #111; color: #f0f0f0; line-height: 1.6; }
+    nav {
+      background-color: #1f1f1f; padding: 15px 20px; position: sticky; top: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    nav a {
+      color: #f0f0f0; text-decoration: none; margin: 0 15px; font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    header { padding: 60px 20px; text-align: center; background: linear-gradient(to right, #333, #111); }
+    header h1 { font-size: 2.8em; }
+    section { padding: 60px 20px; max-width: 900px; margin: auto; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .gallery img {
+      width: 100%; border-radius: 10px; transition: transform 0.3s ease;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .gallery img:hover { transform: scale(1.05); }
+    footer {
+      background-color: #1e1e1e; text-align: center; padding: 30px 20px; font-size: 0.9em; color: #aaa;
+    }
+    h2 { margin-bottom: 20px; font-size: 2em; border-bottom: 1px solid #444; padding-bottom: 10px; }
+    p { margin-bottom: 15px; }
+    @media (max-width: 600px) {
+      nav { flex-direction: column; align-items: flex-start; }
+      nav a { margin: 5px 0; }
+      header h1 { font-size: 2em; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>杀生丸的空间</strong></div>
+    <div>
+      <a href="#about">关于我</a>
+      <a href="#works">作品</a>
+      <a href="#contact">联系</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>欢迎来到我的空间</h1>
+    <p>用安静的方式，持续积累能量</p>
+  </header>
+
+  <section id="about">
+    <h2>关于我</h2>
+    <p>我是一个在东京读社会学的大学生，习惯独立思考，也在适应城市的节奏。</p>
+    <p>比起热闹更喜欢观察，比起表达更注重积累。</p>
+    <p>对社会、战略、文化这些议题感兴趣，也希望将来能做出属于自己的选择。</p>
+  </section>
+
+  <section id="works">
+    <h2>作品</h2>
+    <div class="gallery">
+      <img src="https://placekitten.com/400/300" alt="作品1">
+      <img src="https://placekitten.com/401/300" alt="作品2">
+      <img src="https://placekitten.com/402/300" alt="作品3">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>联系</h2>
+    <p>📧 邮箱：<a href="mailto:z2294984435@gmail.com" style="color: #4ea1ff;">z2294984435@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 杀生丸的空间 ｜ 保留所有权利
+  </footer>
+
+</body>
+</html>
